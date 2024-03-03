@@ -1,0 +1,99 @@
+.img{
+    height: 200px;
+    width: 200px;
+}
+body{
+    background-color: black;
+}
+/*let energiaShinobi = 80;
+let energiaHighlander = 80;
+let round = 0;
+
+while (energiaShinobi > 0 && energiaHighlander > 0) {
+    let golpeShinobi = parseInt(Math.random() * 50);
+    let golpeHighlander = parseInt(Math.random() * 50);
+    round += 1;
+    console.log("---round " + round + "----")
+
+    if (golpeShinobi === golpeHighlander) {
+        console.log("Parry");
+        alert("Parry and strike")
+    }
+    else if (golpeShinobi > golpeHighlander) {
+        energiaShinobi -= golpeHighlander;
+    }
+    else {
+        energiaHighlander -= golpeShinobi;
+    }
+
+
+    console.log(" energia Highnder " + energiaHighlander);
+    console.log(" energia Shinobi " + energiaShinobi)
+    console.log("-----------------------------------")
+
+}
+if (energiaHighlander > 0) {
+    console.log("Victoria HighLander")
+    alert("Ganador Highlander en Ronda n°" + round)
+} else {
+    console.log("Victoria Shinobi")
+    alert("Ganador Shinobi en Ronda n°" + round)
+}*/
+
+
+/*
+while (vidaCaballero > 0 && vidaSamurai > 0) {
+    let cachipun = prompt("Elige: A ataque Fuerte, B contra Ataque, C amague y Ataque (minuscula)");
+    if (cachipun == "a") {
+        console.log("Ataque Fuerte")
+
+    }
+    else if (cachipun == "b") {
+        console.log("Contra Ataque")
+
+    }
+    else if (cachipun == "c") {
+        console.log("Amague Y Ataque")
+
+    }
+    else {prompt("fallaste")}
+
+
+    const RANDNUM = parseInt(Math.random() * 3) + 1;
+    switch (RANDNUM) {
+        case 1:
+            Computador = "a"
+
+            break;
+        case 2:
+            Computador = "b"
+
+            break;
+        case 3:
+            Computador = "c"
+
+            break;
+
+    }
+    if (cachipun == Computador) { alert("Parry") }
+    else if (cachipun = "a", computador = "b") { vidaCaballero -= golpeSamurai}
+
+    else if (cachipun = "b", computador = "c") { vidaCaballero -= golpeSamurai}
+    else if (cachipun = "c", computador = "a") {vidaCaballero -= golpeSamurai }
+    else if ( computador = "a") { vidaSamurai -= golpeCaballero }
+    else if ( computador = "b") { vidaSamurai -= golpeCaballero }
+    else if ( computador = "c") { vidaSamurai -= golpeCaballero}
+  
+    console.log(vidaCaballero, "vida caballero" ) ;
+    console.log(vidaSamurai ,"vida Samurai" ) ;
+
+
+    round += 1;
+    console.log("---round " + round + "----")
+}
+if (vidaSamurai > 0) {
+    console.log("Victoria Samurai")
+    alert("Ganador Samurai en Ronda n°" + round)
+} else {
+    console.log("Victoria Caballero")
+    alert("Ganador Caballero en Ronda n°" + round)}*/
