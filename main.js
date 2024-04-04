@@ -1,91 +1,104 @@
+
+const nombreForm = document.querySelector("#formNombre");
+const nombreInput = document.querySelector("#inputNombre");
+const nome = document.querySelector("#peleador")
+
+nombreForm.addEventListener("submit",(e)=>{
+    e.preventDefault();
+    nome.innerText = nombreInput.value;
+   
+   nombreForm.reset();
+})
+
+
 let saludPlayer = 50;
 let saludComputador = 50;
-let round = 0;
-let player = prompt("caballero o samurai") //"caballero" 
+ let round = 0;
+let player = nombreInput.value;
 const HEAVY = 30;
 const LIGHT = 20;
 
-/*1
-console.log(turnoCompu)*/
-if (player == "caballero") {
-    //alert("elegiste caballero")
-    console.log("Elegiste" + " " + player)
-    computador = "samurai"
-}
-else if (player == "samurai") {
-    // alert("elegiste"+ samurai)
-    console.log("Elegiste" + " " + player)
-    computador = "caballero"
+const ataqueA = document.querySelector("#rapido");
+const ataqueB = document.querySelector("#bloquear");
+const ataqueC = document.querySelector("#esquivar");
+
+ataqueA.addEventListener("click", AtaqueRapido);
+function AtaqueRapido() {
+    console.log("holanda")
 }
 
-else {
-    alert("no es combatiente")
-    console.log("elegiste arruinar mi dia,recargar pagina ")
-
+ataqueB.addEventListener("click", AtaqueContra);
+function AtaqueContra() {
+    console.log("holanda")
+}4
+ataqueC.addEventListener("click", AtaqueEsquivar);
+function AtaqueEsquivar() {
+    console.log("holanda")
 }
 
-/*console.log(computador +"compu")
-console.log(player + "player")*/
+// else if (player == "samurai") {
+//     // alert("elegiste"+ samurai)
+//     console.log("Elegiste" + " " + player)
 
 
-while (saludPlayer > 0 && saludComputador > 0) {
+// while (saludPlayer > 0 && saludComputador > 0) {
 
-   let ataque = prompt("Elige: A ataque Fuerte, B contra Ataque, C amague y Ataque (minuscula)");
-    switch (ataque) {
-        case "a":
-            turnoPlayer = 2
-            console.log("Ataque Fuerte")
+//    let ataque = prompt("Elige: A ataque Fuerte, B contra Ataque, C amague y Ataque (minuscula)");
+//     switch (ataque) {
+//         case "a":
+//             turnoPlayer = 2
+//             console.log("Ataque Fuerte")
 
-            break;
-        case "b":
-            turnoPlayer = 3
-            console.log("Contra Ataque")
+//             break;
+//         case "b":
+//             turnoPlayer = 3
+//             console.log("Contra Ataque")
 
-            break;
-        case "c":
-            turnoPlayer = 4
-            console.log("Amague Y Ataque")
+//             break;
+//         case "c":
+//             turnoPlayer = 4
+//             console.log("Amague Y Ataque")
 
-            break;
+//             break;
 
-        default:
-            break;
-    }
-    let turnoCompu = parseInt(Math.random() * 4) + 1;
-    //let turnoPlayer = parseInt(Math.random() * 4) + 1;
-    let golpeComputador = parseInt(Math.random() * ((HEAVY - LIGHT) + HEAVY))
-    let golpePlayer = parseInt(Math.random() * ((HEAVY - LIGHT) + HEAVY));
+//         default:
+//             break;
+//     }
+//     let turnoCompu = parseInt(Math.random() * 4) + 1;
+//     //let turnoPlayer = parseInt(Math.random() * 4) + 1;
+//     let golpeComputador = parseInt(Math.random() * ((HEAVY - LIGHT) + HEAVY))
+//     let golpePlayer = parseInt(Math.random() * ((HEAVY - LIGHT) + HEAVY));
 
-    round += 1;
-    console.log("---round " + round + "----")
+//     round += 1;
+//     console.log("---round " + round + "----")
 
-    if (turnoCompu == turnoPlayer) {
-        console.log("Parry");
-        alert("Parry")
-    }
-    else if (turnoCompu > turnoPlayer) {
-        saludPlayer -= golpeComputador;
-        if (saludPlayer < 0) { saludPlayer = 0; }
-    }
-    else if (turnoPlayer > turnoCompu) {
-        saludComputador -= golpePlayer;
-        if (saludComputador < 0) {
-            saludComputador = 0;
+//     if (turnoCompu == turnoPlayer) {
+//         console.log("Parry");
+//         alert("Parry")
+//     }
+//     else if (turnoCompu > turnoPlayer) {
+//         saludPlayer -= golpeComputador;
+//         if (saludPlayer < 0) { saludPlayer = 0; }
+//     }
+//     else if (turnoPlayer > turnoCompu) {
+//         saludComputador -= golpePlayer;
+//         if (saludComputador < 0) {
+//             saludComputador = 0;
 
-        }
-    }
+//         }
+//     }
 
-    console.log(turnoCompu + "compu");
-    console.log(turnoPlayer + "player");
-    console.log(" salud player " + saludPlayer);
-    console.log(" salud compu " + saludComputador)
-    console.log("----------------------------------")
-}
+//     console.log(turnoCompu + "compu");
+//     console.log(turnoPlayer + "player");
+//     console.log(" salud player " + saludPlayer);
+//     console.log(" salud compu " + saludComputador)
+//     console.log("----------------------------------")
+// }
 
-if (saludPlayer > 0){ 
-    console.log("¡victoria "+ player+ "!")
+// if (saludPlayer > 0){ 
+//     console.log("¡victoria "+ player+ "!")
 
-}
-else{ 
-    console.log("Derrotado en Ronda n°" + round)
-}
+// }
+// else{ 
+//     console.log("Derrotado en Ronda n°" + round)
+// }
