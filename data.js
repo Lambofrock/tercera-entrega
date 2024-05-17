@@ -1,45 +1,22 @@
 const personajes = [
     {
         nombre: "Samurai",
-        origen: "japon",
-        arma: "katana",
         salud: 50,
-        poder: "alto",
+        ataque: 60,
     },
     {
         nombre: "Caballero",
-        origen: "europa",
-        arma: "espada larga",
         salud: 55,
-        poder: "normal",
-    },
-    {
-        nombre: "Pirata",
-        origen: "caribe",
-        arma: "sable y pistola",
-        salud: 40,
-        poder: "alto",
+        ataque: 55,
     },
     {
         nombre: "Amazona",
-        origen: "grecia",
-        arma: "espada",
-        salud: 70,
-        poder: "alto",
-    },
-    {
-        nombre: "Espartano",
-        origen: "grecia",
-        arma: "lanza y escudo",
         salud: 60,
-        poder: "alto",
+        ataque: 50,        
     },
     {
         nombre: "Vikingo",
-        origen: "norte",
-        arma: "dos hachas",
-        salud: 50,
-        poder: "normal",
-    },
-    
+        salud: 60,
+        ataque: 45,
+    },    
 ]

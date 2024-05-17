@@ -1,24 +1,179 @@
-.img{
-    height: 200px;
-    width: 200px;
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+
 }
+
+.img {
+    height: 50px;
+    width: 50x;
+    filter: invert(1);
+}
+
+.fondillo {
+    background-color: black;
+    padding-top: 10px;
+}
+
+.header {
+    padding-top: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #151515;
+}
+a{
+    text-decoration: none;
+}
+.negro{
+    color: black;
+}
+
+
+.nombrecillo {
+
+    background-color: #69696935;
+    padding-top: 5px;
+    padding-inline: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+}
+.nombre-score{
+    display: flex;
+    justify-content: center;
+    
+}
+.highscore{
+    margin:2px;
+    padding: auto;
+}
+
+.centrar-grilla {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #151515;
+    border-radius: 5px;
+    margin-inline: 5%;
+    color: whitesmoke;
+
+}
+
+.grilla {
+    padding-top: 5px;
+    display: grid;
+    height: 350px;
+ 
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "samura vikingo caballero amazona";
+
+}
+
+
+
+.img-grid {
+    height: 300px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+button {
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0 1px 4px black;
+
+    cursor: pointer;
+    padding: 10px 25px;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+.modal {
+    background-color: black;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.modal.open {
+    opacity: 1;
+    z-index: 999;
+
+}
+
+.modal-inner {
+    background-color: beige;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px black;
+    padding: 15px 25px;
+    text-align: center;
+    width: 70%;
+    height: 80%;
+    background-image: url("img/battlefield.png");
+    background-size: cover;
+    background-position: center
+}
+
+.modal-inner h2 {
+    margin: 0;
+
+}
+
+.modal-inner p {
+    line-height: 24px;
+    margin: 10px 0;
+}
+
+.texto-duelo {
+    background-color: rgba(0, 0, 0, 0.468);
+    width: 3fr;
+    margin-inline: 25%;
+    color: rgb(230, 230, 230);
+
+}
+
+.btn-final {
+    margin-top: 20%;
+}
+.batalla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 21px;
+    padding-bottom: 100px;
+}.btn-ataque{
+    margin-top: 20px;
+    margin-inline: 5px;
+}
+.ranking{
+   margin-top: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #69696935;
+    margin-inline: 25%;
+    color: white;
+}
+
 body{
     background-color: black;
-}
-h1{
-    color: red;
-    display: flex;
-    justify-content: center;
-}
-.accordion{
-    margin-inline: 20%;
-}
-.centrar-ataques{
-    display: flex;
-    justify-content: center;
-   padding-inline: 10px;
-}
-.personajes-array{
-    display: flex;
-    justify-content: center;
 }
