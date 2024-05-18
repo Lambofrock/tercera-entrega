@@ -24,10 +24,12 @@
     gap: 20px;
     background-color: #151515;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.negro{
+
+.negro {
     color: black;
 }
 
@@ -36,7 +38,7 @@ a{
 
     background-color: #69696935;
     padding-top: 5px;
-    padding-inline: 5px;
+    padding-inline: 15px;
     padding-bottom: 5px;
     border-radius: 5px;
     display: flex;
@@ -44,13 +46,15 @@ a{
     align-items: center;
     color: whitesmoke;
 }
-.nombre-score{
+
+.nombre-score {
     display: flex;
     justify-content: center;
-    
+
 }
-.highscore{
-    margin:2px;
+
+.highscore {
+    margin: 5px;
     padding: auto;
 }
 
@@ -69,7 +73,7 @@ a{
     padding-top: 5px;
     display: grid;
     height: 350px;
- 
+
 
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -77,6 +81,26 @@ a{
 
 }
 
+.cajas:hover {
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+
+}
+
+.Seleccionado {
+    border: 2px solid rgba(164, 0, 0, 0.82);
+    border-radius: 5px;
+    color: rgba(164, 0, 0, 0.82);
+}
+
+.vs-blanco {
+    font-weight: bold;
+}
+
+.vs {
+    color: rgba(164, 0, 0, 0.82);
+    font-weight: bold;
+}
 
 
 .img-grid {
@@ -149,24 +173,28 @@ button:active {
     width: 3fr;
     margin-inline: 25%;
     color: rgb(230, 230, 230);
-
+    border-radius: 5px;
 }
 
 .btn-final {
     margin-top: 20%;
 }
-.batalla{
+
+.batalla {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 21px;
     padding-bottom: 100px;
-}.btn-ataque{
+}
+
+.btn-ataque {
     margin-top: 20px;
     margin-inline: 5px;
 }
-.ranking{
-   margin-top: 10px;
+
+.ranking {
+    margin-top: 10px;
     border-radius: 5px;
     padding: 20px;
     background-color: #69696935;
@@ -174,6 +202,6 @@ button:active {
     color: white;
 }
 
-body{
+body {
     background-color: black;
 }

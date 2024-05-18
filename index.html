@@ -14,9 +14,11 @@
 
 <body>
     <header>
-        <div >
-            <a class="header" href="index.html"><h1>Duelo!</h1>
-            <img class="img" src="img/swords.png" alt="sword"></a>
+        <div>
+            <a id="reloj" class="header" href="index.html">
+                <h1>Duelo!</h1>
+                <img class="img" src="img/swords.png" alt="sword">
+            </a>
 
         </div>
     </header>
@@ -24,31 +26,31 @@
         <div class="nombre-score">
 
             <div class="mb-3 nombrecillo">
-                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1">
-                <button id="highscore" class="highscore" ><a class="negro" href="highscore.html">Ranking</a></button>
+                <form class="form-label">Nombre</form>
+                <input type="text" class="form-control" id="nombreJugador">
+                <button id="highscore" class="highscore"><a class="negro" href="highscore.html">Ranking</a></button>
             </div>
-    
-        </div>       
-      
+
+        </div>
+
         <div class="centrar-grilla"> <!-- elegir combatiente-->
 
-            <h2>Elige a tu guerrero</h2>
+            <h2 id="comaqla">Elige a tu Campeón</h2>
+            <h2 id="nombreGuerrero"></h2>
             <div class="grilla">
-                <div class="Cajas samurai">Samurai
+                <div id="elegirSamurai" class=" cajas">Samurai
                     <img class="img-grid" src="img/samurai.jpg" alt="">
                 </div>
 
-                <div class="Cajas vikingo">Vikingo
+                <div id="elegirVikingo" class="cajas">Vikingo
                     <img class="img-grid" src="img/vikingo.jpg" alt="">
                 </div>
 
-                <div class="Cajas caballero">Caballero
+                <div id="elegirCaballero" class=" cajas">Caballero
                     <img class="img-grid" src="img/caballero.jpg" alt="">
-
                 </div>
 
-                <div class="Cajas amazona">Amazona
+                <div id="elegirAmazona" class="cajas">Amazona
                     <img class="img-grid" src="img/amazona.jpg" alt="">
                 </div>
             </div>
@@ -56,38 +58,40 @@
 
         <div> <!-- pop up-->
             <div class="batalla">
-                <button  id="openModal">Campo de Batalla</button>
+                <button id="openModal">Campo de Batalla</button>
             </div>
             <div class="modal" id="modal">
-              
+
                 <div class="modal-inner">
                     <h2>Duelo!</h2>
-                  <div id="vesrsus"><!--vesrsus-->
-
-                  </div>
+                    <div class="vs-blanco" id="versus"><!--vesrsus-->
+                        <p class="vs-blanco" id="campeonSeleccionado"></p>
+                        <p class="vs">VS</p>
+                        <p id="enemigoSeleccionado" class="vs-blanco"></p>
+                    </div>
                     <!-- log-->
                     <div class="texto-duelo">
                         <div>
-                            <p id="Nround">Lorem</p>
+                            <p id="Nround"></p>
                         </div>
                         <div>
-                            <p  id="historia">Lorem ipsum dolor sit amet.</p>
+                            <p id="historia"></p>
                         </div>
                         <div>
-                            <p id="daño">Lorem, ipsum.</p>
+                            <p id="daño"></p>
                         </div>
                         <div>
-                            <p id="salud-combate">Lorem ipsum dolor sit.</p>
+                            <p id="salud-combate"></p>
                         </div>
                     </div>
                     <div>
-                        <button  class="btn-ataque">Ataque Rapido</button>
-                        <button  class="btn-ataque"> Bloqueo y Ataque</button>
-                        <button  class="btn-ataque">Esquivar y Atacar</button>
+                        <button id="rapido" class="btn-ataque">Ataque Rapido</button>
+                        <button id="bloquear" class="btn-ataque"> Bloqueo y Ataque</button>
+                        <button id="esquivar" class="btn-ataque">Esquivar y Atacar</button>
                     </div>
-                   <div class="btn-final">
-                       <button class="final" id="closeModal">Fin del duelo</button>
-                   </div>
+                    <div class="btn-final">
+                        <button class="final" id="closeModal">Fin del duelo</button>
+                    </div>
                 </div>
             </div>
         </div>
